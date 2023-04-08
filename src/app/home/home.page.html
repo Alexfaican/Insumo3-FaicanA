@@ -1,0 +1,27 @@
+<ion-header [translucent]="true" class="header">
+  <ion-toolbar>
+    <ion-title class="letrita">
+      PUES PON ALGO SE GUARDA XD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Testing - Add LocalStorage
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="cont" class="cont">
+    <ion-label class="letrita">{{recovertext}}</ion-label>
+    <br>
+    <br>
+    <input class="header2" placeholder="Ingresa algo" type="text" [(ngModel)]="receivetext">
+    <br>
+    <br>
+    <button class="search" (click)="print()">Send</button>
+  </div>
+</ion-content>
